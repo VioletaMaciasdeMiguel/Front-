@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="text/javascript"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Laboratorio front</title>
+</head>
+<body>
+    <div class="div_principal">
+    <form name="createaccount" id="form">
+        <h1> Create Account </h1>
+        <div class="div_secundario">
+            <p>Nombre</p>
+            <input type="text" name="name" value="" id="nombre" class="input_secundario" placeholder="Nombre">
+            <span id="error_nombre"></span>
+        </div>
+        <div class="div_secundario">
+            <p>Email</p>
+            <input type="email" name="email" value="" id="mail" class="input_secundario" placeholder="Email">
+            <span id="error_mail"></span>
+        </div>
+        <div class="div_secundario">
+            <p>Clave</p> 
+            <input type="password" name="clave" value="" id="contrasenia" class="input_secundario" placeholder="Contraseña">
+            <span id="error_contrasenia"></span>
+        </div>
+        <div class="div_secundario">
+            <p>Confirme su clave</p> 
+            <input type="password" name="clave" value="" id="contrasenia2" class="input_secundario" placeholder="Repetir contraseña">
+            <span id="error_contrasenia2"></span>
+        </div>
+        <input type="submit" value="ENVIAR" id="button" onclick="return todo_ok()" onmouseover="bordeBoton()"/>
+    </form>
+    </div>
+</body>
+</html>
